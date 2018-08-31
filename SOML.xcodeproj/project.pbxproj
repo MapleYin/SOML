@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D61FBEE5CC404E9CA4EE244 /* Pods_SOML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D4CE1BF445A6CFCDF49EEE /* Pods_SOML.framework */; };
 		BE0C4750212EA8250034589F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C474F212EA8250034589F /* AppDelegate.swift */; };
-		BE0C4752212EA8250034589F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C4751212EA8250034589F /* ViewController.swift */; };
 		BE0C4757212EA8290034589F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0C4756212EA8290034589F /* Assets.xcassets */; };
 		BE0C475A212EA8290034589F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0C4758212EA8290034589F /* LaunchScreen.storyboard */; };
 		BE0C4763212EB33C0034589F /* AppDelegate+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C4762212EB33C0034589F /* AppDelegate+UI.swift */; };
@@ -22,7 +21,6 @@
 		50D4CE1BF445A6CFCDF49EEE /* Pods_SOML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0C474C212EA8250034589F /* SOML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0C474F212EA8250034589F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE0C4751212EA8250034589F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE0C4756212EA8290034589F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0C4759212EA8290034589F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0C475B212EA8290034589F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,8 +78,8 @@
 		BE0C474E212EA8250034589F /* SOML */ = {
 			isa = PBXGroup;
 			children = (
+				BE0C476621300C3C0034589F /* Module */,
 				BE0C4761212EB3140034589F /* Main */,
-				BE0C4751212EA8250034589F /* ViewController.swift */,
 				BE0C4756212EA8290034589F /* Assets.xcassets */,
 				BE0C4758212EA8290034589F /* LaunchScreen.storyboard */,
 				BE0C475B212EA8290034589F /* Info.plist */,
@@ -97,6 +95,37 @@
 				BE0C4764212EB4240034589F /* MainTabBarController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		BE0C476621300C3C0034589F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BE0C476921300C6E0034589F /* Model */,
+				BE0C476821300C600034589F /* Service */,
+				BE0C476721300C590034589F /* App */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BE0C476721300C590034589F /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BE0C476821300C600034589F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BE0C476921300C6E0034589F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,19 +223,21 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SOML/Pods-SOML-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -220,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE0C4752212EA8250034589F /* ViewController.swift in Sources */,
 				BE0C4750212EA8250034589F /* AppDelegate.swift in Sources */,
 				BE0C4765212EB4240034589F /* MainTabBarController.swift in Sources */,
 				BE0C4763212EB33C0034589F /* AppDelegate+UI.swift in Sources */,

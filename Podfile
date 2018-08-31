@@ -13,6 +13,6 @@ target 'SOML' do
   pod 'ObjectMapper', '~> 3.0'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'Texture'
-  pod 'PINRemoteImage/WebP'
-  
+#  pod 'PINRemoteImage/WebP'
+
 end
