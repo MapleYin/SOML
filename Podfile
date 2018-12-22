@@ -10,9 +10,10 @@ target 'SOML' do
   inhibit_all_warnings!
   
   pod 'Alamofire', '~> 4.0'
-  pod 'ObjectMapper', '~> 3.0'
-  pod 'AlamofireObjectMapper', '~> 5.0'
-  pod 'Texture'
+  pod 'YYModel', '~> 1.0.4'
+#  pod 'ObjectMapper', '~> 3.0'
+#  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'Texture', '~> 2.7'
 #  pod 'PINRemoteImage/WebP'
 
 end

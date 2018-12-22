@@ -13,6 +13,9 @@
 		BE0C475A212EA8290034589F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0C4758212EA8290034589F /* LaunchScreen.storyboard */; };
 		BE0C4763212EB33C0034589F /* AppDelegate+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C4762212EB33C0034589F /* AppDelegate+UI.swift */; };
 		BE0C4765212EB4240034589F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0C4764212EB4240034589F /* MainTabBarController.swift */; };
+		F5BCE35521CE7D2E0055EE07 /* MomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCE35421CE7D2E0055EE07 /* MomentModel.swift */; };
+		F5BCE35721CE7DE10055EE07 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCE35621CE7DE10055EE07 /* ImageModel.swift */; };
+		F5BCE35B21CE7E6F0055EE07 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCE35A21CE7E6F0055EE07 /* TimeLineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		BE0C475B212EA8290034589F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0C4762212EB33C0034589F /* AppDelegate+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UI.swift"; sourceTree = "<group>"; };
 		BE0C4764212EB4240034589F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F5BCE35421CE7D2E0055EE07 /* MomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentModel.swift; sourceTree = "<group>"; };
+		F5BCE35621CE7DE10055EE07 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		F5BCE35A21CE7E6F0055EE07 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 		BE0C474E212EA8250034589F /* SOML */ = {
 			isa = PBXGroup;
 			children = (
+				F5BCE35221CE6F390055EE07 /* Editor */,
+				F5BCE35121CE6F230055EE07 /* TimeLine */,
 				BE0C476621300C3C0034589F /* Module */,
 				BE0C4761212EB3140034589F /* Main */,
 				BE0C4756212EA8290034589F /* Assets.xcassets */,
@@ -126,6 +134,47 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F5BCE35121CE6F230055EE07 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCE35921CE7E350055EE07 /* View */,
+				F5BCE35821CE7E280055EE07 /* Controller */,
+				F5BCE35321CE73030055EE07 /* Model */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		F5BCE35221CE6F390055EE07 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		F5BCE35321CE73030055EE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCE35421CE7D2E0055EE07 /* MomentModel.swift */,
+				F5BCE35621CE7DE10055EE07 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5BCE35821CE7E280055EE07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCE35A21CE7E6F0055EE07 /* TimeLineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5BCE35921CE7E350055EE07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,22 +271,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SOML/Pods-SOML-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -252,8 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0C4750212EA8250034589F /* AppDelegate.swift in Sources */,
+				F5BCE35721CE7DE10055EE07 /* ImageModel.swift in Sources */,
+				F5BCE35521CE7D2E0055EE07 /* MomentModel.swift in Sources */,
 				BE0C4765212EB4240034589F /* MainTabBarController.swift in Sources */,
 				BE0C4763212EB33C0034589F /* AppDelegate+UI.swift in Sources */,
+				F5BCE35B21CE7E6F0055EE07 /* TimeLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

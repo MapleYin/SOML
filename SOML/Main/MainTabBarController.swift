@@ -10,5 +10,22 @@ import UIKit
 import AsyncDisplayKit
 
 class MainTabBarController: ASTabBarController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupTabbar()
+    }
+}
+
+
+// MARK: - UI
+extension MainTabBarController {
+    func setupTabbar() {
+        var viewControllers: [UIViewController] = []
+        
+        // TimeLine
+        viewControllers.append(ASNavigationController(rootViewController: TimeLineViewController()))
+        
+        self.viewControllers = viewControllers
+    }
 }
