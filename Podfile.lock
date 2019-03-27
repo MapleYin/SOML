@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.2)
+  - ObjectMapper (3.4.2)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -15,6 +15,12 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
+  - SnapKit (4.2.0)
   - Texture (2.7):
     - Texture/PINRemoteImage (= 2.7)
   - Texture/Core (2.7)
@@ -22,30 +28,41 @@ PODS:
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
-  - YYModel (1.0.4)
+  - YYModel (0.1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
+  - ObjectMapper (~> 3.0)
+  - RealmSwift (~> 3.13.0)
+  - SnapKit (~> 4.2)
   - Texture (~> 2.7)
-  - YYModel (~> 1.0.4)
+  - YYModel (from `./YYModel`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
+    - ObjectMapper
     - PINCache
     - PINOperation
     - PINRemoteImage
+    - Realm
+    - RealmSwift
+    - SnapKit
     - Texture
-    - YYModel
+
+EXTERNAL SOURCES:
+  YYModel:
+    :path: "./YYModel"
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYModel: 4cbd030d0ff3c97702c1b2069adc2f3da2b7bb8f
 
-PODFILE CHECKSUM: cf14b09220449109aaaebc398decf30a0e782e03
+PODFILE CHECKSUM: 3a41bf455f067a04f42814ddd0ef7e9a0317cfac
 
 COCOAPODS: 1.5.3

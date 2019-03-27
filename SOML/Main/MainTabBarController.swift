@@ -24,7 +24,8 @@ extension MainTabBarController {
         var viewControllers: [UIViewController] = []
         
         // TimeLine
-        viewControllers.append(ASNavigationController(rootViewController: TimeLineViewController()))
+        let vc = TimeLineViewController()
+        viewControllers.append(ASNavigationController(rootViewController: vc))
         
         self.viewControllers = viewControllers
     }
